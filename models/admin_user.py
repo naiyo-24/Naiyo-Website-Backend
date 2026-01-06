@@ -3,7 +3,7 @@ from datetime import datetime
 from werkzeug.security import generate_password_hash, check_password_hash
 
 class AdminUser(db.Model):
-    __tablename__ = 'admin_users'
+    __tablename__ = 'admin_user'
 
     id = db.Column(db.Integer, primary_key=True)
     email = db.Column(db.String(120), unique=True, nullable=False)
